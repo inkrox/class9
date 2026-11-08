@@ -74,6 +74,16 @@ h1 { font-size: clamp(32px, 5.4vw, 48px); line-height: 1.2; font-weight: 800; le
 .profile dt { flex: 0 0 6.5em; color: #6b8494; }
 .profile dd { flex: 1; }
 
+/* ===== 目录 ===== */
+ol.toc { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+ol.toc a {
+  display: inline-block; font-size: 13px; color: #0e8fa8; text-decoration: none;
+  padding: 5px 13px; border-radius: 999px;
+  background: #f2fbfd; border: 1px solid #cfeef6;
+  transition: border-color .2s, background .2s;
+}
+ol.toc a:hover { border-color: #7fd4e6; background: #e6f8fc; }
+
 /* ===== 语录 ===== */
 ol.quotes { list-style: none; counter-reset: q; }
 ol.quotes li {
@@ -112,14 +122,14 @@ ol.list .num {
   white-space: nowrap;
 }
 .t-bio    { color: #1a9e52; background: #e6f8ed; }
-.t-biogeo { color: #0f8b74; background: #e2f7f2; }
+.t-other  { color: #64748b; background: #f0f3f7; }
 .t-geo    { color: #0e8fa8; background: #e3f6fb; }
 .t-chem   { color: #2563eb; background: #e8f0ff; }
 .t-phy    { color: #0b7fb0; background: #e3f4fc; }
 .t-math   { color: #0e7d99; background: #e2f6fa; }
 .t-eng    { color: #3b5bd9; background: #e9edff; }
 .t-chi    { color: #2b6fb5; background: #e9f1fb; }
-.t-pol    { color: #0e7490; background: #e4f5fa; }
+.t-exam   { color: #475569; background: #e8edf3; }
 .t-his    { color: #475569; background: #eef2f6; }
 
 /* ===== 未完待续 ===== */
